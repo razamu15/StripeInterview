@@ -19,7 +19,14 @@ Stripe interview questions gathered from Internet, no guarantee of authenticity 
 
 ###Integration
 - Request Replay
+  - read request and response from a JSON file
+  - re-send the request to update the response or to check if response code is the same
+  - may need to maintain a map of old response id to new response id
 - Bike Map
+  - read from a JSON file, print something out
+  - send request to a URL and save response to local file
+  - Java file has some basic methods such as reading/writing JSON files
+  - check GSON and OKHTTP library
 
 ###Bug Swash
 - [Jackson-Core](https://github.com/FasterXML/jackson-core)
