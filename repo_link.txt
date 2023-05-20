@@ -1,0 +1,17 @@
+Fullstack: 
+https://github.com/AntonioFisherMan/Stripe_Interview
+https://github.com/ArsalanDotMe/stripe-interview
+https://github.com/rolawson/stripe
+
+
+take-home i think:
+https://github.com/barbayrak/Stripe-Ecommerce-Demo
+https://github.com/AntonioFisherMan/Stripe_Interview
+https://github.com/tiffnapolitano/Stripe-interview-sample-AACP
+https://github.com/ArsalanDotMe/stripe-interview
+
+
+OTHER could be take home or not:
+https://github.com/LukeIrvin26/StripeTestGateway
+
+
