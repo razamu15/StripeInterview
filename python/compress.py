@@ -34,9 +34,11 @@
 #  * If a major part has more than m minor parts, we keep the first (m-1) minor parts as is, but concatenate the first letter of the m-th minor part and the last letter of the last minor part with the count
 
 def compress(s):
+    # python 2
+    # return s[0] + str(len(s)-2) + s[-1]
     return f'{s[0]}{len(s)-2}{s[-1]}'
 
-def part1(url:str):
+def part1(url):
     compressed_url = []
     major_parts = url.split('/')
 
@@ -52,7 +54,7 @@ def part1(url:str):
 
     return '/'.join(compressed_url)
 
-def part2(url:str, m):
+def part2(url, m):
     compressed_url = []
     major_parts = url.split('/')
 
@@ -66,7 +68,9 @@ def part2(url:str, m):
                 compressed_parts.append(compress(part))
             else:
                 leftover_len = sum([ len(p) for p in minor_parts[ind:] ])
-                something = f'{part[0]}{leftover_len-2}{minor_parts[-1][-1]}'
+                # python 2
+                something = part[0] + str(leftover_len-2) + minor_parts[-1][-1]
+                # something = f'{part[0]}{leftover_len-2}{minor_parts[-1][-1]}'
                 compressed_parts.append(something)
                 break
 
