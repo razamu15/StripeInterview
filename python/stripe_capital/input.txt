@@ -1,0 +1,9 @@
+CREATE_LOAN: acct_foobar,loan1,1000
+CREATE_LOAN: acct_foobar,loan2,2000
+CREATE_LOAN: acct_barfoo,loan1,3000
+CREATE_LOAN: acct_barfoo,loan2,50
+TRANSACTION_PROCESSED: acct_foobar,loan1,100,1
+PAY_LOAN: acct_barfoo,loan1,1000
+INCREASE_LOAN: acct_foobar,loan2,1000
+TRANSACTION_PROCESSED: acct_barfoo,loan1,2000,100
+PAY_LOAN: acct_barfoo,loan1,1000
